@@ -6,7 +6,7 @@ app.get("/edi", function (req: any, res: any) {
     req.query;
 
   var api_url =
-    "http://apis.data.go.kr/B551182/mcatInfoService1.2/getPaymentNonPaymentList1.2?";
+    "https://apis.data.go.kr/B551182/mcatInfoService1.2/getPaymentNonPaymentList1.2?";
   var request = require("request");
   var options = {
     url: api_url,
