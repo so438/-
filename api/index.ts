@@ -26,6 +26,6 @@ app.get("/edi", function (req: any, res: any) {
 
 app.listen(3000, function () {
   console.log(
-    "http://127.0.0.1:3000/edi?serviceKey=2a48f93a5348af17db0d725602e187d8bbb0569c6092441acaf20573b0985fb0&numOfRows=10&pageNo=1&mcatCd=G8207118 app listening on port 3000!"
+    "https://127.0.0.1:3000/edi?serviceKey=2a48f93a5348af17db0d725602e187d8bbb0569c6092441acaf20573b0985fb0&numOfRows=10&pageNo=1&mcatCd=G8207118 app listening on port 3000!"
   );
 });
