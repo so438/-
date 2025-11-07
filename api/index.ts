@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 
 app.get("/edi", function (req: any, res: any) {
-  const { serviceKey, numOfRows, pageNo, mcatCd, itmNm } =
+  const { ServiceKey, numOfRows, pageNo, mcatCd, itmNm } =
     req.query;
 
   var api_url =
@@ -10,7 +10,7 @@ app.get("/edi", function (req: any, res: any) {
   var request = require("request");
   var options = {
     url: api_url,
-    qs: { serviceKey, numOfRows, pageNo, mcatCd, itmNm },
+    qs: { ServiceKey, numOfRows, pageNo, mcatCd, itmNm },
   };
   
   request.get(options, function (error: any, response: any, body: any) {
@@ -26,6 +26,6 @@ app.get("/edi", function (req: any, res: any) {
 
 app.listen(3000, function () {
   console.log(
-    "http://127.0.0.1:3000/edi?serviceKey=2a48f93a5348af17db0d725602e187d8bbb0569c6092441acaf20573b0985fb0&numOfRows=10&pageNo=1&mcatCd=G8207118&itmNm=COROX OTW-S BP app listening on port 3000!"
+    "http://127.0.0.1:3000/edi?ServiceKey=2a48f93a5348af17db0d725602e187d8bbb0569c6092441acaf20573b0985fb0&numOfRows=10&pageNo=1&mcatCd=G8207118&itmNm=COROX OTW-S BP app listening on port 3000!"
   );
 });
